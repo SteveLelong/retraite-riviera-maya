@@ -657,7 +657,7 @@ async function handleSubmit() {
 
   // -- 1. Formspree (email vers ta boîte)
   // Remplace YOUR_FORMSPREE_ID par l'ID obtenu sur formspree.io
-  var formspreePromise = fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
+  var formspreePromise = fetch('https://formspree.io/f/xdayeovp', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
     body: JSON.stringify(payload)
@@ -671,7 +671,7 @@ async function handleSubmit() {
   formsubmitPayload.append('_captcha', 'false');
   formsubmitPayload.append('_template', 'table');
 
-  var formsubmitPromise = fetch('https://formsubmit.co/YOUR_EMAIL', {
+  var formsubmitPromise = fetch('https://formsubmit.co/skamseu@gmail.com', {
     method: 'POST',
     body: formsubmitPayload
   });
